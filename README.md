@@ -4,4 +4,4 @@ By using <b>RIOT tags</b>, we can create the basic structure and re-use it as ma
 
 Just take a look for yourself! https://ab4464.github.io/RIOT-photo-tag/
 
-NOTE: It won't work in Safari, try with Chrome instead!
+NOTE: It won't work with Safari, try with Chrome instead!
