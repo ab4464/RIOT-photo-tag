@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riot Photo Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+</head>
+    
+<body>
+    <div class="jumbotron">
+    <h2>Caption checker!</h2>
+    <hr>
+    <p class="lead">Let's see which pics have caption!</p>
+    </div>
+    <photo-tag image_src= "https://static.boredpanda.com/blog/wp-content/uuuploads/cute-baby-animals-2/cute-baby-animals-2-2.jpg" image_caption="I'm the cutest kitty"></photo-tag>
+    
+    <photo-tag image_src= "https://i.pinimg.com/736x/db/22/08/db2208f9403af15c21ef4d11a8d233a2--too-cute-very-cute-baby.jpg"></photo-tag>
+    
+    <photo-tag image_src= "https://s-media-cache-ak0.pinimg.com/originals/cb/88/5b/cb885b85b78da0a156ccbfa498b153d8.png" image_caption= "Put your hands up!"></photo-tag>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.7.3/riot+compiler.js"></script>
+    <script src="app/photo.tag.html" type='riot/tag'></script>
+    <script>riot.mount('*')</script>
+</body>
+</html>

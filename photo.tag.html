@@ -1,0 +1,58 @@
+<photo-tag>
+    
+    <div class="container">
+    <img src={tag._image_src} class="photo-card">
+    <p if={tag._image_caption} class="caption"> {tag._image_caption} </p>
+    
+    <p class="thumbs-container"><img class="thumbs_up" src="https://newarkschoolsforsale.files.wordpress.com/2013/09/thumbs-down.png" if= {! tag._image_caption}></p>
+    </div>
+<style>
+    .container {
+            display: inline-block;
+            height: 700px;
+            border: 1px 1px #ccc;
+            width: 400px;
+    }
+    .photo-card {
+            display: inline-block;
+            width: 250px;
+            height: 350px;
+            padding: 10px 10px;
+            border: 1px solid #ccc;
+            margin-left: 55px;
+            box-shadow: 4px 3px #a8aaad;
+        } 
+    .caption {
+            display: inline-block;
+            margin-left: 85px;
+            text-transform: uppercase;
+            color: #3e4042;
+            width: 100%;
+            height: 300px;
+    }
+    
+    .thumbs-container{
+            margin: 2px 0 0;
+            width: 250px;
+            padding: 0;
+            padding-left: 165px;
+        
+    }
+    .thumbs_up {
+            height: 35px;
+            width: 45px;
+            border: 1px dotted red;
+            background: red;
+            
+        }
+    
+</style>
+<script>
+    tag = this;
+    tag._image_src = opts.image_src;
+    tag._image_caption = opts.image_caption;  
+</script>
+</photo-tag>
+
+
+
